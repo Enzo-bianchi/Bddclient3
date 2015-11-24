@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="TD3">
+
+<head>
+    <meta charset="utf-8">
+    <title>TD3</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body style="background-color: #f9f9f9" ng-controller="CtrlPrincipal">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#/user">API GitHub</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/user">User</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid" ng-view>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/angular.min.js"></script>
+    <script src="js/angular-route.min.js"></script>
+    <script src="js/app/appModule.js"></script>
+    <script src="js/app/appController.js"></script>
+    <script src="js/angular-flash.min.js"></script>
+</body>
+
+</html>

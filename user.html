@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-lg-4 col-md-4 col-sm-5">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Retrouver un utilisateur</h3>
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal" ng-submit="recupUser()">
+                    <fieldset>
+                        <div class="form-group">
+                            <label for="inputNom" class="col-lg-3 control-label">Pseudo</label>
+                            <div class="col-lg-9">
+                                <input ng-model="pseudo" type="text" class="form-control" id="inputNom" placeholder="Pseudo">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-9 col-lg-offset-3">
+                                <button type="submit" class="btn btn-primary">Trouver cette personne</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-8 col-sm-7">
+        <div flash-message="5000"></div>
+        <div ng-if="user != null" class="jumbotron panel panel-default " style="text-align:center;">
+            <img align="center" src="img/GitHub.png" alt="github" style="padding-bottom:5%;">
+            <p><strong>Identifiant: </strong>{{ user.id }}</p>
+            <p><strong>Nom : </strong>{{ user.name }}</p>
+            <p><strong>Entreprise : </strong>{{ user.company }}</p>
+            <p><strong>Location : </strong>{{ user.location }}</p>
+            <p><strong>Nombre de Repos publique : </strong>{{ user.public_repos }}</p>
+            <a href="{{ user.html_url }}">Voir son profil complet sur GitHub</a>
+        </div>
+    </div>
+</div>
