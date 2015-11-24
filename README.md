@@ -10,7 +10,7 @@ Je recupere:
 * le nom
 * la localisation
 * le nombre de repo publique
-* See the HTML in the right
+
 ---
 Avec la possibilité de voir le profil complet sur github.
 
